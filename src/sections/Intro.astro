@@ -1,0 +1,48 @@
+---
+import { Image } from 'astro:assets';
+
+import woman1 from '../images/woman_in_pool.jpg'
+import woman2 from '../images/woman_in_pool_2.jpg'
+---
+
+<section class="container mx-auto py-16 mt-16 flex flex-col lg:flex-row">
+  <!-- Text Content -->
+  <div class="lg:w-1/2 flex flex-col">
+    <p class="text-lg">
+      Špecializujeme sa na výrobu bazénov, ich montáž a servis. Dodáme tiež
+      technológiu čistenia vody a nadštandardné príslušenstvo.
+    </p>
+
+    <h2 class="text-5xl font-bold leading-none mt-24">
+      So všetkým,<br>čo sa týka vody,<br>pomôžeme
+    </h2>
+
+    <div class="mt-auto relative -bottom-20">
+      <a href="#" class="bg-accent-500 text-white text-lg px-8 py-6 hover:bg-accent-400 transition-colors">
+        Zobraziť ponuku bazénov &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- Images -->
+  <div class="lg:w-1/2">
+    <div class="relative w-full">
+      <Image
+        src={woman2}
+        alt="Woman in pool"
+        width={800}
+        height={1000}
+        style={{width: "400px", height: "500px"}}
+        class="object-cover ml-auto"
+      />
+      <Image
+        src={woman1}
+        alt="Pool in nature"
+        width={600}
+        height={800}
+        style={{width: "300px", height: "400px"}}
+        class="object-cover absolute left-0 -bottom-24 z-10"
+      />
+    </div>
+  </div>
+</section>
