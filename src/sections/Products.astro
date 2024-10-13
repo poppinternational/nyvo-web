@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import preliv from "../images/preliv.jpg";
+import skimmer from "../images/skimmer.jpg";
+---
+
+<section class="container mx-auto py-16">
+  <div class="flex justify-between">
+    <h2 class="text-5xl font-bold leading-none">Produkty</h2>
+    <p class="text-2xl max-w-lg font-bold">
+      V ponuke máme 3 základné typy bazénov, ktoré vyrábame na mieru na základe
+      vašich požiadaviek. Okrem bazénov ponúkame aj príslušenstvo bazénov a
+      prestrešenia.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-4 lg:gap-6 xl:gap-16 mt-32">
+    <div class="flex items-start">
+      <h3 class="uppercase border-b border-neutral-800 pb-4">Typy bazénov</h3>
+    </div>
+    <div class="bg-accent-300 flex flex-col justify-between">
+      <div class="flex p-6 justify-between">
+        <h4 class="text-2xl xl:text-3xl font-medium">Bazény<br />s prelivom</h4>
+        <span class="text-2xl">01</span>
+      </div>
+      <Image src={preliv} alt="Bazén s prelivom" />
+    </div>
+    <div class="bg-accent-300 flex flex-col justify-between">
+      <div class="flex p-6 justify-between">
+        <h4 class="text-2xl xl:text-3xl font-medium">
+          Bazény<br />so skimmerom
+        </h4>
+        <span class="text-2xl">02</span>
+      </div>
+      <Image src={skimmer} alt="Bazén so skimmerom" />
+    </div>
+    <div class="bg-secondary-300 flex flex-col justify-between">
+      <div class="flex p-6 justify-between">
+        <h4 class="text-2xl xl:text-3xl font-medium">Divine<br />pools</h4>
+        <span class="text-2xl">03</span>
+      </div>
+      <p class="xl:text-xl p-6">
+        Samonosný bazén je moderní, designově čisté řešení pro náročné klienty,
+        kteří vědí, že bazén je odrazem jejich osobnosti. Chtějte pro sebe a své
+        blízké nejlepší a nadčasové řešení.
+      </p>
+    </div>
+  </div>
+</section>

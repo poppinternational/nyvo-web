@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import logoFooter from "../images/logo_footer.svg";
+import footerBg from "../images/footer_bg.svg";
+---
+
+<footer class="bg-accent-400 text-white pt-16 px-6 pb-6 relative">
+  <div class="grid grid-cols-2 gap-16">
+    <Image src={logoFooter} alt="Nyvo" />
+
+    <nav>
+      <ul class="flex flex-col text-neutral-900">
+        <li>
+          <a href="#" class="hover:text-accent-700 transition-colors">Domov</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-accent-700 transition-colors">Bazény</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-accent-700 transition-colors"
+            >Mapa predajcov</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:text-accent-700 transition-colors">Kontakt</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <Image src={footerBg} alt="Nyvo" class="w-full h-full object-cover" />
+
+  <p class="absolute bottom-10 right-10 text-accent-300 text-right">
+    All rights reserved.<br />Nyvo © 2024
+  </p>
+</footer>

@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import poolBg from "../images/pool_bg_summer.jpg";
+---
+
+<section class="relative my-32">
+  <Image
+    src={poolBg}
+    alt="Ako si vybrať správny bazén?"
+    class="absolute top-0 left-0 w-full h-full object-cover"
+  />
+  <div class="relative container mx-auto max-w-[800px] pt-32">
+    <div class="bg-white p-16">
+      <h2 class="text-5xl font-bold leading-none">
+        Ako si vybrať správny bazén?
+      </h2>
+      <ol class="list-decimal list-outside space-y-4 mt-16 text-3xl ml-8">
+        <li class="pl-12">Pripravenie zadania</li>
+        <li class="pl-12">Oslovenie predajcu</li>
+        <li class="pl-12">Upresnenie detailov</li>
+        <li class="pl-12">Výroba a montáž</li>
+        <li class="pl-12">Dodanie a kúpanie</li>
+      </ol>
+
+      <a
+        href="#map"
+        class="bg-accent-500 text-white text-lg px-8 py-6 hover:bg-accent-400 transition-colors mt-16 block w-fit"
+      >
+        Prejsť na mapu predajcov &rarr;
+      </a>
+    </div>
+  </div>
+
+  <div class="relative container mx-auto bg-secondary-400 p-16 mt-16 top-16">
+    <h2 class="text-5xl font-bold leading-none">
+      Máte záujem o nezáväznú cenovú ponuku?
+    </h2>
+    <div class="flex justify-between w-full items-end">
+      <p class="text-xl mt-32">
+        Napíšte nám a vytvoríme Vám<br />
+        ponuku na mieru.
+      </p>
+      <a
+        href="#map"
+        class="bg-white text-neutral-800 text-lg px-8 py-6 hover:bg-secondary-200 transition-colors mt-16 block w-fit"
+      >
+        Napíšte nám &rarr;
+      </a>
+    </div>
+  </div>
+</section>

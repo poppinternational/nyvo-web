@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import bgImage from "../images/example_pool.jpg";
+---
+
+<section class="mt-16 relative">
+  <Image
+    src={bgImage}
+    alt="Background image of a modern pool"
+    class="w-full h-full object-cover"
+  />
+  <div class="absolute bg-secondary-100 top-8 right-8 py-4 px-6">
+    Bazén s prelivom
+  </div>
+</section>
